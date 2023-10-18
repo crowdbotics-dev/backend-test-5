@@ -63,3 +63,11 @@ class BackendViewSet(BaseConnectorViewSet):
     BASE_URL = "https://crowdbotics.com"
     AUTH_TYPE = "basic"
     IDENTIFIER = "BACKEND"
+
+
+class New783ViewSet(BaseConnectorViewSet):
+    PASSWORD = settings.NEW783_PASSWORD
+    USERNAME = settings.NEW783_USERNAME
+    BASE_URL = "https://crowdbotics.com"
+    AUTH_TYPE = "basic"
+    IDENTIFIER = "NEW783"
